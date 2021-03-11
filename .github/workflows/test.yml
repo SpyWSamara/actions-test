@@ -31,7 +31,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          
+
      # test install script
       - name: Test install
         run: |
@@ -40,3 +40,6 @@ jobs:
           whereis sudo
           sudo apt-get update -y
           sudo apt-get install rsync openssh-client -y
+
+      - name: Uptime
+        run: uptime
